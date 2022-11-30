@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+body{
+    min-height: 100vh;
+    background-color:var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    padding: 2rem;
+    min-height: 100vh;
+    background-color:var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+}
+
+.section-1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: var(--Soft-red);
+    color: var(--Very-pale-orange);
+    border-radius: 10px;
+    border: none;
+
+}
+
+.balance > p{
+    margin-bottom: 0.3rem;
+}
+.section-2{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Very-pale-orange);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.section-2 > h2{
+    padding: 1rem 1rem 0 0;
+
+}
+
+.chart{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: 1rem;
+    padding: 1rem;
+
+}
+
+li{
+    list-style: none;
+    padding: 0.3rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hr{
+    border: 1px solid var(--Medium-brown);
+    width: 90%;
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:1.5rem;
+}
+
+#mon, #tue, #wed, #thu, #fri, #sat, #sun{
+    height: 200px;
+    border: 1px solid red;
+    width: 1.8rem;
+}
+
+@media only screen and (min-width:500px){
+    article{
+        width: 500px;
+    }
+    li{
+        list-style: none;
+
+    
+    }
+    .bottom{
+        padding: 2rem;
+    }
+    #mon, #tue, #wed, #thu, #fri, #sat, #sun{
+        height: 200px;
+        border: 1px solid red;
+        width: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
